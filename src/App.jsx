@@ -4,6 +4,7 @@ import { Login } from './pages/Login'
 import { Tienda } from './pages/Tienda'
 import { Registro } from './pages/Registro'
 import { NavBar } from './components/NavBar'
+import { Footer } from './components/Footer'
 
 export function App() {
   return (
@@ -18,6 +19,8 @@ export function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Registro />} />
       </Routes>
+
+      <Footer />
     </div>
   )
 }
