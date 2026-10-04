@@ -12,14 +12,12 @@ export function App() {
       <NavBar />
 
       {/* Renderizado de páginas */}
-      <main>
-        <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/tienda" element={<Tienda />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/registro" element={<Registro />} />
-        </Routes>
-      </main>
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/tienda" element={<Tienda />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Registro />} />
+      </Routes>
     </div>
   )
 }
