@@ -1,3 +1,3 @@
-export function Inicio() {
+export function Login() {
   return <h1>Página de Login</h1>;
 }

@@ -1,20 +1,22 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { Inicio } from './pages/Inicio'
+import { Login } from './pages/Login'
+import { Tienda } from './pages/Tienda'
 import { Registro } from './pages/Registro'
+import { NavBar } from './components/NavBar'
 
 export function App() {
   return (
     <div>
-      {/* Menú o barra de navegación */}
-      <nav style={{ display: 'flex', gap: '15px', padding: '10px', background: '#f0f0f0' }}>
-        <Link to="/">Inicio</Link>
-        <Link to="/Registro">Registro</Link>
-      </nav>
+      {/* Navegación */}
+      <NavBar />
 
-      {/* Área dinámica donde se renderizan las páginas */}
-      <main style={{ padding: '20px' }}>
+      {/* Renderizado de páginas */}
+      <main>
         <Routes>
           <Route path="/" element={<Inicio />} />
+          <Route path="/tienda" element={<Tienda />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/registro" element={<Registro />} />
         </Routes>
       </main>
