@@ -9,7 +9,7 @@ import fullImg from '../assets/images/hero.png';
 export function Inicio() {
   return (
     <>
-      <img class="bienvenida-imagen" src={fullImg} alt="Torta Cuadrada de Frutas de la pastelería"></img>
+      <img className="bienvenida-imagen" src={fullImg} alt="Torta Cuadrada de Frutas de la pastelería"></img>
       <main>
         <BienvenidaSection />
         <DestacadosSeccion />
