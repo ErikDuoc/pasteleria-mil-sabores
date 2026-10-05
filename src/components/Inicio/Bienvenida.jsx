@@ -1,4 +1,14 @@
 export function BienvenidaSection() {
+    const handleScrollToNosotros = () => {
+        const seccionNosotros = document.getElementById('nosotros');
+        
+        if (seccionNosotros) {
+        seccionNosotros.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+        }
+    };
     return (
         <section id="bienvenida">
             <h2>¡Bienvenido a nuestra pastelería!</h2>
