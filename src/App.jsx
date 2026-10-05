@@ -5,10 +5,13 @@ import { Tienda } from './pages/Tienda'
 import { Registro } from './pages/Registro'
 import { NavBar } from './components/NavBar'
 import { Footer } from './components/Footer'
+import { ScrollToTop } from './components/ScrollToTop'
 
 export function App() {
   return (
     <div>
+      <ScrollToTop />
+
       {/* Navegación */}
       <NavBar />
 
