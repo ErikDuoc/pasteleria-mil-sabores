@@ -1,4 +1,4 @@
-import { BienvenidaSection } from '../components/Inicio/Bienvenida';
+import { BienvenidaSection } from '../components/inicio/Bienvenida';
 import { DestacadosSeccion } from '../components/inicio/DestacadosSeccion';
 import { QuienesSomosSeccion } from '../components/inicio/QuienesSomosSeccion';
 import { ImpactoSeccion } from '../components/inicio/ImpactoSeccion';
